@@ -1,0 +1,7 @@
+bitbake-cookerdaemon.log
+cache/
+deploy-ti/
+tmp-*/
+nfsroot/
+tftp/
+workspace/
