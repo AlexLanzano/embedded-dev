@@ -22,3 +22,7 @@
 [submodule "layers/meta-freescale"]
 	path = layers/meta-freescale
 	url = git@github.com:Freescale/meta-freescale.git
+[submodule "layers/meta-clang"]
+	path = layers/meta-clang
+	url = git@github.com:kraj/meta-clang.git
+	branch = scarthgap

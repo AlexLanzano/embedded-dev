@@ -6,6 +6,14 @@ beagleplay:
 beagleyai:
 	MACHINE=beagleyai bitbake core-image-minimal
 
+.PHONY: qemuarm64-dev
+qemuarm64-dev:
+	MACHINE=qemuarm64-dev bitbake core-image-minimal
+
+.PHONY: run-qemuarm64-dev
+run-qemuarm64-dev:
+	runqemu qemuarm64-dev nographic
+
 .PHONY: update-nfsroot-beagley
 update-nfsroot-beagley:
 	-tar -xf deploy-ti/images/beagleyai/core-image-minimal-beagleyai.rootfs.tar.xz -C nfsroot
